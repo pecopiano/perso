@@ -1,7 +1,6 @@
 import urllib2
 from bs4 import BeautifulSoup
 import re
-import csv
 
 # Fetch the page indexing the top voted Youtube links on reddit
 url = 'http://www.reddit.com/domain/youtube.com/top/?sort=top&t=all'
@@ -31,8 +30,8 @@ for p in clean:
     url.append("https://www.youtube.com/watch?v=%s" %p)
 
 # Write the resulting urls to a .txt file
-urlss = "\n".join(url)
+write_url = "\n".join(url)
 
 filename = open("reddit-youtube-links.txt", 'w')
-filename.write(urlss)
+filename.write(write_url)
 filename.close()
