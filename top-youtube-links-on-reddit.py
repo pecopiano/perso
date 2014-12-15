@@ -31,9 +31,3 @@ urlss = "\n".join(url)
 filename = open("reddit.txt", 'w')
 filename.write(urlss)
 filename.close()
-
-# with open('eggs.csv', 'wb') as csvfile:
-#     spamwriter = csv.writer(csvfile, delimiter=' ',
-#                             quotechar='|', quoting=csv.QUOTE_MINIMAL)
-#     spamwriter.writerow(urlss)
-# 
